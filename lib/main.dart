@@ -20,7 +20,6 @@ class MyApp extends StatelessWidget {
       getPages: [
         GetPage(name: '/', page: () => Splash()),
         GetPage(name: '/todo', page: () => TodoScreen()),
-        // Diğer sayfalarınızı buraya ekleyebilirsiniz
       ],
     );
   }
