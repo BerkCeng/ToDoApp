@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import 'splash_cont.dart';
+import 'package:todoapp/features/splash/presentation/state/splash_controller.dart';
 
-class Splash extends StatelessWidget {
+class SplashPage extends StatelessWidget {
+  SplashPage({super.key});
+
   final SplashController controller = Get.put(SplashController());
 
   @override
   Widget build(BuildContext context) {
-    // Splash ekranında 3 saniye bekledikten sonra ana ekrana yönlendirme
-
-    return Scaffold(
+    return const Scaffold(
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -34,3 +34,5 @@ class Splash extends StatelessWidget {
     );
   }
 }
+
+

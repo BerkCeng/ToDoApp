@@ -1,5 +1,5 @@
 import 'package:get/get.dart';
-import 'package:shared_preferences/shared_preferences.dart';
+import 'package:todoapp/core/routes/app_routes.dart';
 
 class SplashController extends GetxController {
   @override
@@ -9,8 +9,9 @@ class SplashController extends GetxController {
   }
 
   Future<void> _navigateToNextScreen() async {
-    final prefs = await SharedPreferences.getInstance();
-    await Future.delayed(Duration(seconds: 3));
-    Get.offAllNamed("/todo");
+    await Future.delayed(const Duration(seconds: 3));
+    Get.offAllNamed(Routes.todo);
   }
 }
+
+
